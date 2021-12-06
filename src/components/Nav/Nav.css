@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  height: 7vh;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+}
+
+.name-link {
+  color: #000;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+.nav-links:hover {
+  background: lightgray;
+}
