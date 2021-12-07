@@ -4,7 +4,7 @@ import { fetchWeather } from "../api/api";
 import axios from "axios";
 import "./Temps.css";
 
-const Temps = ({ name, temps_max, temps_min }) => {
+const Temps = () => {
   const [cold] = useState("Il fait froid");
   const [warm] = useState("Il fait chaud");
   const [cities, setCities] = useState("");
@@ -41,7 +41,7 @@ const Temps = ({ name, temps_max, temps_min }) => {
       return (
         <>
           <div className="warm-list">
-            <div>
+            <div key={list.id}>
               {list.city} - {list.country}
             </div>
           </div>
@@ -90,6 +90,11 @@ const Temps = ({ name, temps_max, temps_min }) => {
   );
 };
 
-Temps.propTypes = {};
+Temps.propTypes = {
+  name: PropTypes.string.isRequired,
+  main: PropTypes.shape({
+    temp: PropTypes.number.isRequired,
+  }),
+};
 
 export default Temps;
