@@ -1,16 +1,9 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { fetchWeather } from "../api/api";
-import Temps from "./Temps";
 
 export default function Search() {
   const [cities, setCities] = useState("Lyon");
-  const [country, setCountry] = useState(undefined);
   const [weather, setWeather] = useState({});
-  const [tempMax, setTempMax] = useState(null);
-  const [tempMin, setTempMin] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
   const search = async (e) => {
     if (e.key === "Enter") {
@@ -34,11 +27,22 @@ export default function Search() {
           placeholder="Lyon"
           value={cities}
           onChange={handleChange}
+          onKeyPress={search}
         />
-        <div>{cities}</div>
-        <div>
-          <Temps city={cities} />
-        </div>
+
+        {weather.main && (
+          <div className="city">
+            <h2 className="city-name">
+              <span>{weather.name}</span>
+            </h2>
+            <div className="city-temp">
+              <h3>
+                {Math.round(weather.main.temp)}
+                <sup>&deg;C</sup>
+              </h3>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
