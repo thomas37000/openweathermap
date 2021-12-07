@@ -41,8 +41,9 @@ const Temps = ({ name, temps_max, temps_min }) => {
       return (
         <>
           <div className="warm-list">
-            <div>{list.city}</div>
-            {/* <div>{list.country}</div> */}
+            <div>
+              {list.city} - {list.country}
+            </div>
           </div>
         </>
       );
@@ -75,7 +76,7 @@ const Temps = ({ name, temps_max, temps_min }) => {
                 </h3>
               </div>
             </div>
-            <div>{weather.main.temp < 15 ? cold : warm}</div>
+            <div className="temp">{weather.main.temp < 15 ? cold : warm}</div>
           </div>
         </>
       )}
@@ -83,7 +84,7 @@ const Temps = ({ name, temps_max, temps_min }) => {
       <div className="vacation">
         Do you want to go in vacanation in a warm City, here some examples where
         the temperature is superior at 25°
-        <div>{fetchJsonWarmList}</div>
+        <div className="warm-cities">{fetchJsonWarmList}</div>
       </div>
     </div>
   );

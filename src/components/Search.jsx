@@ -33,7 +33,7 @@ export default function Search() {
         {weather.main && (
           <>
             <div className="city">
-              <h2 className="city-name">
+              <h2 className="">
                 <span>{weather.name}</span>
               </h2>
               <div className="city-temp">

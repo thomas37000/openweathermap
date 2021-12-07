@@ -4,6 +4,10 @@
   justify-content: space-around;
 }
 
+.warm-cities {
+  margin-top: 1rem;
+}
+
 .vacation {
   margin-top: 5rem;
   background: rgb(238, 238, 238);
@@ -14,8 +18,9 @@
   );
 }
 
-.warm-bg, .cold-bg {
-    padding: 1rem 0 2rem 0;
+.warm-bg,
+.cold-bg {
+  padding: 2rem 0;
 }
 
 .warm-bg {
@@ -37,5 +42,9 @@
 }
 
 .city-name {
-    color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.temp, .city-temp {
+    margin: 1rem 0;
 }
