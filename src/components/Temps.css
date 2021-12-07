@@ -13,3 +13,29 @@
     rgba(2, 255, 163, 1) 100%
   );
 }
+
+.warm-bg, .cold-bg {
+    padding: 1rem 0 2rem 0;
+}
+
+.warm-bg {
+  background: rgb(219, 11, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 11, 11, 1) 0%,
+    rgba(255, 129, 2, 1) 100%
+  );
+}
+
+.cold-bg {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 70, 253, 1) 100%
+  );
+}
+
+.city-name {
+    color: #f1f1f1;
+}

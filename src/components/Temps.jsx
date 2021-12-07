@@ -63,18 +63,20 @@ const Temps = ({ name, temps_max, temps_min }) => {
 
       {weather.main && (
         <>
-          <div className="city">
-            <h2 className="city-name">
-              <span>{weather.name}</span>
-            </h2>
-            <div className="city-temp">
-              <h3>
-                {Math.round(weather.main.temp)}
-                <sup>&deg;C</sup>
-              </h3>
+          <div className={weather.main.temp < 15 ? "cold-bg" : "warm-bg"}>
+            <div className="city">
+              <h2 className="city-name">
+                <span>{weather.name}</span>
+              </h2>
+              <div className="city-temp">
+                <h3>
+                  {Math.round(weather.main.temp)}
+                  <sup>&deg;C</sup>
+                </h3>
+              </div>
             </div>
+            <div>{weather.main.temp < 15 ? cold : warm}</div>
           </div>
-          <div>{weather.main.temp < 15 ? cold : warm}</div>
         </>
       )}
 
