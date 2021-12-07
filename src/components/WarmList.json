@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "city": "Koweït City",
+    "country": "Koweït"
+  },
+  {
+    "id": 2,
+    "city": "Ahvaz",
+    "country": "Iran"
+  },
+  {
+    "id": 3,
+    "city": "Dallol",
+    "country": "Éthiopie"
+  },
+  {
+    "id": 4,
+    "city": "Jizan",
+    "country": "Arabie Saoudite"
+  },
+  {
+    "id": 5,
+    "city": "La Mecque",
+    "country": "Arabie Saoudite"
+  },
+  {
+    "id": 6,
+    "city": "El Azizia",
+    "country": "Lybie"
+  },
+  {
+    "id": 7,
+    "city": "Tombouctou",
+    "country": "Mali"
+  },
+  {
+    "id": 8,
+    "city": "Phoenix",
+    "country": "États-Unis"
+  },
+  {
+    "id": 9,
+    "city": "Marrakech",
+    "country": "Maroc"
+  },
+  {
+    "id": 10,
+    "city": "Las Vegas",
+    "country": "États-Unis"
+  },
+  {
+    "id": 11,
+    "city": "Illizi",
+    "country": "Algérie"
+  },
+  {
+    "id": 12,
+    "city": "Tombouctou",
+    "country": "Mali"
+  },
+  {
+    "id": 13,
+    "city": "Bangkok",
+    "country": "Thaïlande"
+  },
+  {
+    "id": 14,
+    "city": "La Valette",
+    "country": "Malte"
+  },
+  {
+    "id": 15,
+    "city": "Djeddah",
+    "country": "Arabie Saoudite"
+  },
+  {
+    "id": 16,
+    "city": "Penrith",
+    "country": "Australie"
+  },
+  {
+    "id": 17,
+    "city": "Tirat-Zvi",
+    "country": "Israël"
+  },
+  {
+    "id": 18,
+    "city": "Resistancia",
+    "country": "Argentine"
+  },
+  {
+    "id": 19,
+    "city": "Formosa",
+    "country": "Argentine"
+  },
+  {
+    "id": 20,
+    "city": "Dunhuang",
+    "country": "Chine"
+  },
+  {
+    "id": 21,
+    "city": "Asuncion",
+    "country": "Paraguay"
+  }
+]
