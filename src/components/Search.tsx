@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { fetchWeather } from "../api/api";
 
-export default function Search() {
+export default function Search(): React.ReactNode {
   const [cities, setCities] = useState("");
   const [weather, setWeather] = useState({});
 
-  const search = async (e) => {
+  const search = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       const res = await fetchWeather(cities);
       setWeather(res);
@@ -14,7 +14,8 @@ export default function Search() {
     }
   };
 
-  const handleChange = (e) => setCities(e.target.value);
+  const handleChange = (input: any) => (e: React.ChangeEvent<HTMLInputElement>) =>
+  setCities(e.target.value );
 
   return (
     <>
