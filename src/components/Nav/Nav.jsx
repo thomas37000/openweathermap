@@ -13,7 +13,7 @@ const Nav = () => {
         </div>
         <div className="nav-links">
           <Link to="/temps" className="name-link">
-            Chaud ou Froid ?
+            Warm or Cold ?
           </Link>
         </div>
       </div>

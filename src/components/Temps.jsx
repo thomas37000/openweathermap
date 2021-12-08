@@ -5,8 +5,8 @@ import axios from "axios";
 import "./Temps.css";
 
 const Temps = () => {
-  const [cold] = useState("Il fait froid");
-  const [warm] = useState("Il fait chaud");
+  const [cold] = useState("It's cold");
+  const [warm] = useState("It's warm");
   const [cities, setCities] = useState("");
   const [weather, setWeather] = useState({});
   const [warmCities, setWarmCities] = useState([]);
@@ -51,16 +51,19 @@ const Temps = () => {
 
   return (
     <div className="search">
-      <input
-        type="text"
-        name="search"
-        id="searchBar"
-        className="search-bar"
-        placeholder="Lyon"
-        value={cities}
-        onChange={handleChange}
-        onKeyPress={search}
-      />
+      <label>
+        Choose a City and press Enter
+        <input
+          type="text"
+          name="search"
+          id="searchBar"
+          className="search-bar"
+          placeholder="Lyon"
+          value={cities}
+          onChange={handleChange}
+          onKeyPress={search}
+        />
+      </label>
 
       {weather.main && (
         <>
@@ -82,8 +85,8 @@ const Temps = () => {
       )}
 
       <div className="vacation">
-        Do you want to go in vacanation in a warm City, here some examples where
-        the temperature is superior at 25°
+        Do you want to go in vacanation in a warm City in Winter, here some
+        examples where the temperature is superior at 15°
         <div className="warm-cities">{fetchJsonWarmList}</div>
       </div>
     </div>
